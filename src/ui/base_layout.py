@@ -15,6 +15,7 @@ def style_background_home():
                     background-color:#E0E3FF !important;
                     padding:2.5rem !important;
                     border-radius: 5rem !important;
+                    color: #000000 !important;
                     }
         </style>  
 
@@ -28,7 +29,8 @@ def style_background_dashboard():
         <style>
 
                 .stApp {
-                    background: #E0E3FF !important;
+                    background: #e0e3ff !important;
+                    color: #000000 !important;
                 }
 
         </style>  
@@ -60,8 +62,9 @@ def style_base_layout():
             h1 {
                 font-family: 'Climate Crisis', sans-serif !important;
                 font-size: 1.5rem !important;
-                line-height:1.1 1important;
+                line-height:1.1 !important;
                 margin-bottom:0rem !important;
+                
             }
                 
 
@@ -70,11 +73,26 @@ def style_base_layout():
                 font-size: 1.5rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
+               
+            }
+             h3 {
+                font-family: 'Outfit', sans-serif;
+                
+            }
+             h4 {
+                font-family: 'Outfit', sans-serif;
+               
             }
                 
-            h3, h4, p {
-                font-family: 'Outfit', sans-serif;    
+            p {
+                font-family: 'Outfit', sans-serif;
+                color: #B8B3B2 !important
             }
+            
+            /* Target ONLY headers inside columns (your cards) */
+.stApp div[data-testid="stColumn"] h1 {
+    color: #000000 !important;   /* 🔥 change color here */
+}
                 
 
             button{
@@ -97,8 +115,8 @@ def style_base_layout():
 
             button[kind="tertiary"]{
                 border-radius: 1.5rem !important;
-                background-color: black !important;
-                color: white !important;
+                background-color: white !important;
+                color: black !important;
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
